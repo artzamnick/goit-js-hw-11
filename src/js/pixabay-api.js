@@ -16,5 +16,5 @@ return axios
         per_page,
     },
     })
-    .then(r => r.data);
+    .then(response => response.data);
 }
