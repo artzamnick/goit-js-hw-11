@@ -1,36 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Pixabay Gallery</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.css"
+      integrity="sha512-V8CqN3WfAmL0WvDYTjJq7iFVu+d1T8Z45UEfENLQBmJfLD0W8hZxIuen1mgkXOuH6dVF0QRekbb/1ckEyFqQUg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <a class="nav-logo" href="./index.html" aria-label="Site logo">
-            <svg class="nav-logo-icon" width="100" height="30">
-              <use href="./img/logo.svg"></use>
-            </svg>
-          </a>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link {=$highlight-act}" href="./1-timer.html"
-                >Timer</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {=$highlight-curr}" href="./2-snackbar.html"
-                >Snackbar</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <h1 class="title">Pixabay Image Finder</h1>
     </header>
-    <main></main>
+    <main>
+      <section class="search-section">
+        <form id="search-form">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Введи слово для пошуку..."
+            autocomplete="off"
+          />
+          <button type="submit">Пошук</button>
+        </form>
+      </section>
+      <section class="gallery-section">
+        <ul class="gallery"></ul>
+      </section>
+      <div class="loader hidden" id="loader">Завантаження...</div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"
+      integrity="sha512-s7jJArhcXd1j1pmYAYuMzq3FCQvnY5lndN5VXAkO5RTv3vU8l+hgKBIP/txkLhnSnZSzWFjGCLtmMjOa7INnpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
