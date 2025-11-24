@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixabay Gallery</title>
-    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pixabay Image Finder</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.css"
@@ -14,32 +13,30 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
     />
     <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-B-Rlw6V1.js">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-BocuK-4Y.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-OAi5KeKz.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-MgecxatS.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-CWKLx11g.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-zR9al1aH.css">
   </head>
   <body>
-    <header class="header">
-      <h1 class="title">Pixabay Image Finder</h1>
-    </header>
     <main>
-      <section class="search-section">
-        <form id="search-form">
-          <input
-            type="text"
-            id="search-input"
-            placeholder="Введи слово для пошуку..."
-            autocomplete="off"
-            required
-          />
-          <button type="submit">Пошук</button>
-        </form>
-      </section>
+      <h1 class="title">Pixabay Image Finder</h1>
+      <form class="form" aria-label="search-form">
+        <input
+          type="text"
+          class="form-input"
+          placeholder="Введіть слово для пошуку..."
+          aria-label="search-input"
+        />
+        <button type="submit" class="form-btn">Пошук</button>
+      </form>
+      <span class="loader is-hidden" aria-hidden="true"></span>
       <section class="gallery-section">
         <ul class="gallery"></ul>
       </section>
-      <div class="loader" id="loader"></div>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"
+      defer
+    ></script>
   </body>
 </html>
