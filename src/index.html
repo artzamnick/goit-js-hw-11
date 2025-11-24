@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pixabay Gallery</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.css"
-      integrity="sha512-V8CqN3WfAmL0WvDYTjJq7iFVu+d1T8Z45UEfENLQBmJfLD0W8hZxIuen1mgkXOuH6dVF0QRekbb/1ckEyFqQUg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
     />
   </head>
   <body>
@@ -27,6 +26,7 @@
             id="search-input"
             placeholder="Введи слово для пошуку..."
             autocomplete="off"
+            required
           />
           <button type="submit">Пошук</button>
         </form>
@@ -36,12 +36,7 @@
       </section>
       <div class="loader hidden" id="loader">Завантаження...</div>
     </main>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"
-      integrity="sha512-s7jJArhcXd1j1pmYAYuMzq3FCQvnY5lndN5VXAkO5RTv3vU8l+hgKBIP/txkLhnSnZSzWFjGCLtmMjOa7INnpg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"></script>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
